@@ -283,11 +283,206 @@ body{
 	position:fixed;
 	bottom:60px;
 	left:3%;
+	z-index:99;
 }
 .mall_sent{
 	position:fixed;
 	bottom:60px;
 	right:3%;
+	z-index:99;
+}
+header{
+	position:fixed;
+	z-index:999;
+	width:100%;
+	top:0;
+	left:0;
+	background-color:#fff;
+	box-shadow:1px 0px 3px rgba(0,0,0,0.5);
+}
+.title_box{
+	background-size:cover;
+	height:257px;
+	text-align:center;
+	color:#fff;
+}
+.title_box h3{
+	position:relative;
+}
+.title_box h3::before{
+	content:"";
+	width:66px;
+	left:50%;
+	transform:translateX(-33px);
+	height:2px;
+	background-color:#ed1c24;
+	display:block;
+	position:absolute;
+	bottom:-7px;
+}
+.box_news{
+	border:1px solid #d7d7d7;
+	box-shadow:4px 10px 8px rgba(0,0,0,0.1);
+	height:550px;
+	margin-bottom:45px;
+}
+.list_box_news{
+	margin-top:60px;
+}
+.txt_news{
+	padding:25px;
+	text-align:center;
+}
+.txt_news h3{
+	margin-top:0;
+}
+.txt_news h3 a{
+	font-size:22px;
+	line-height:30px;
+	color:#000;
+}
+.txt_news h5{
+	color:#bbbbbb;
+	font-weight:normal;
+}
+.txt_news hr{
+	border-color:#ed1c24;
+	width:95px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.phantrang .pagination>li>a,.phantrang .pagination>li>span{
+	margin-left:10px;
+	border-radius:50%;
+	color:#000;
+	font-size:18px;
+}
+.phantrang .pagination>li:first-child>a,.phantrang .pagination>li:first-child>span,.phantrang .pagination>li:last-child>a,.phantrang .pagination>li:last-child>span{
+	border-radius:50%;
+}
+.phantrang{
+	text-align:center;
+}
+.phantrang .pagination{
+	margin:0;
+}
+.phantrang .pagination>.active>a,.phantrang .pagination>.active>span,.phantrang .pagination>.active>a:hover,.phantrang .pagination>.active>span:hover,.phantrang .pagination>.active>a:focus, .phantrang .pagination>.active>span:focus{
+	background-color: #ed1c24;
+	color:#fff;
+	border-color:#ed1c24;
+}
+.bread_link{
+	background-color:#ed1c24;
+}
+.bread_link li{
+	color:#fff;
+	padding-right:5px;
+	list-style:none;
+	display:inline-block;
+	padding-top:14px;
+	padding-bottom:14px;
+}
+.bread_link li a{
+	color:#fff;
+}
+.time_detail_news{
+	color:#929292;
+	font-size:12px;
+}
+.top_detail_news{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:30px;
+}
+.box_detail_news{
+	margin-top:45px;
+}
+.content_detail_news p{
+	font-size:18px;
+	line-height:36px;
+}
+figure{
+	text-align:center;
+	margin-bottom:20px;
+}
+figure figcaption{
+	color:#717171;
+	font-size:14px;
+	margin: 10px 0;
+	font-style:italic;
+}
+.txt_other_news{
+	text-align:center;
+}
+.txt_other_news h3 a{
+	color:#000;
+	font-size:18px;
+	line-height:30px;
+}
+.txt_other_news h5{
+	margin-bottom:0;
+	color:#b3b3b3;
+	font-weight:normal;
+}
+.news_other .eclipse-controls{
+	display:none;
+}
+.news_other .eclipse-prev {
+    background: url(../images/arrow_other_news.png) no-repeat;
+    width: 41px;
+    height: 42px;
+}
+.news_other .eclipse-next {
+    background: url(../images/arrow_other_news.png) no-repeat;
+    width: 41px;
+    height: 42px;
+}
+.news_other{
+	border-top:1px dotted #bebebe;
+	padding-top:30px;
+	margin-top:30px;
+}
+.news_other h3{
+	font-size:24px;
+	margin-bottom:25px;
+}
+.filter_project{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:45px;
+}
+.select_filter{
+	width:300px;
+}
+.full_filter{
+	width:160px;
+	background-color:#ed1c24;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	line-height:37px;
+	border-radius:10px;
+	color:#fff;
+}
+.input_filter{
+	width:500px;
+	position:relative;
+}
+.input_filter input,.select_filter select{
+	border-radius:10px;
+}
+.input_filter::before{
+	content:"";
+}
+.btn_search{
+	position:absolute;
+	top:6px;
+	right:14px;
+	border:none;
+	background:none;
+	padding:0;
 }
 @media only screen and (min-width: 1300px) {
 	.container{
@@ -298,6 +493,31 @@ body{
 	}
 }
 @media only screen and (min-width: 768px) {
+	.modal-dialog{
+		width:830px;
+	}
+	.list_box_news .row{
+		margin-left:-38px;
+		margin-right:-38px;
+	}
+	.list_box_news .col-sm-4{
+		padding-left:38px;
+		padding-right:38px;
+	}
+	.title_box h3{
+		padding-top:40px;
+		margin-top:0;
+		font-size:41px;
+		margin-bottom:30px;
+}
+.title_box p{
+	line-height:28px;
+	max-width:982px;
+	margin:0 auto;
+}
+	.content_body{
+		margin-top:102px;
+	}
 	.txt_about{
 		width:52%;
 		margin-top:60px;
@@ -400,6 +620,9 @@ body{
 	
 }
 @media only screen and (max-width: 767px) {
+	.content_body{
+		margin-top:60px;
+	}
 	.navbar-brand {
 		height:auto;
 		padding:15px;
