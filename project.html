@@ -10,7 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="css/eclipse.css" rel="stylesheet">
-    <link href="css/camroll_slider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/albery.css" type="text/css">
 	<link href="css/styles.css" rel="stylesheet">
     <script src="js/eclipse.js"></script>
     
@@ -178,41 +178,93 @@
     <!-- popup project -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    	<div id="my-slider" class="crs-wrap">
-      <div class="crs-screen">
-        <div class="crs-screen-roll">
-          <div class="crs-screen-item" style="background-image: url('https://i.picsum.photos/id/680/1440/810.jpg')">
-          </div>
-          <div class="crs-screen-item" style="background-image: url('https://picsum.photos/1440/810?image=676')">
-          </div>
-          <div class="crs-screen-item" style="background-image: url('https://picsum.photos/1440/810?image=660')">
-          </div>
-          <div class="crs-screen-item" style="background-image: url('https://picsum.photos/1440/810?image=646')">
-          </div>
-          <div class="crs-screen-item" style="background-image: url('https://picsum.photos/1440/810?image=633')">
-          </div>
-          <div class="crs-screen-item" style="background-image: url('https://picsum.photos/1440/810?image=28')">
-          </div>
+  		<button type="button" class="close_modal" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <div class="albery-container">
+
+			<div class="albery-wrapper">
+
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=655" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=656" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=657" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=658" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=659" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=660" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=661" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=662" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=663" alt="">
+				</div>
+				<div class="albery-item">
+					<img src="https://picsum.photos/1000/666?image=664" alt="">
+				</div>
+
+			</div>
+
+			<div class="move-right">
+				<a href="#" id="rightArrow"></a>
+			</div>
+			<div class="move-left">
+				<a href="#" id="leftArrow"></a>
+			</div>
+
+		</div>
+        <div class="pagination-container">
+            <div class="pagination-wrapper">
+                <div class="pagination-item" data-item="1">
+                    <img src="https://picsum.photos/116/77?image=655" alt="">
+                </div>
+                <div class="pagination-item" data-item="2">
+                    <img src="https://picsum.photos/116/77?image=656" alt="">
+                </div>
+                <div class="pagination-item" data-item="3">
+                    <img src="https://picsum.photos/116/77?image=657" alt="">
+                </div>
+                <div class="pagination-item" data-item="4">
+                    <img src="https://picsum.photos/116/77?image=658" alt="">
+                </div>
+                <div class="pagination-item" data-item="5">
+                    <img src="https://picsum.photos/116/77?image=659" alt="">
+                </div>
+                <div class="pagination-item" data-item="6">
+                    <img src="https://picsum.photos/116/77?image=660" alt="">
+                </div>
+                <div class="pagination-item" data-item="7">
+                    <img src="https://picsum.photos/116/77?image=661" alt="">
+                </div>
+                <div class="pagination-item" data-item="8">
+                    <img src="https://picsum.photos/116/77?image=662" alt="">
+                </div>
+                <div class="pagination-item" data-item="9">
+                    <img src="https://picsum.photos/116/77?image=663" alt="">
+                </div>
+                <div class="pagination-item" data-item="10">
+                    <img src="https://picsum.photos/116/77?image=664" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="crs-bar">
-        <div class="crs-bar-roll-current"></div>
-        <div class="crs-bar-roll-wrap">
-          <div class="crs-bar-roll">
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=680')"></div>
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=676')"></div>
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=660')"></div>
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=646')"></div>
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=633')"></div>
-            <div class="crs-bar-roll-item" style="background-image: url('https://picsum.photos/1440/810?image=628')"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    	 <script type="text/javascript" src="js/camroll_slider.js"></script>
+        <script src="js/albery.js"></script>
 		<script>
-        $("#my-slider").camRollSlider();
-      </script>
+            $(".albery-container").albery({
+                speed: 500,
+                imgWidth: 830,
+            });
+        </script>
       <div class="txt_modal_project">
           <div class="row">
             <div class="col-sm-8">
@@ -326,7 +378,6 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
 
 </body>
 </html>

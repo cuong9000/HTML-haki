@@ -430,12 +430,12 @@ figure figcaption{
 .news_other .eclipse-controls{
 	display:none;
 }
-.news_other .eclipse-prev {
+.news_other .eclipse-prev,.slider_services .eclipse-prev{
     background: url(../images/arrow_other_news.png) no-repeat;
     width: 41px;
     height: 42px;
 }
-.news_other .eclipse-next {
+.news_other .eclipse-next, .slider_services .eclipse-next{
     background: url(../images/arrow_other_news.png) no-repeat;
     width: 41px;
     height: 42px;
@@ -494,6 +494,221 @@ figure figcaption{
 	.txt_modal_project{
 		color:#fff;
 	}
+	.close_modal{
+		position:absolute;
+		font-size:40px;
+		right:-50px;
+		background:none;
+		color:#fff;
+		border:none;
+		top:0;
+	}
+	.header_services {
+		padding:60px 0;
+		font-size:24px;
+		line-height:40px;
+	}
+	.services2{
+		background-position:left;
+		height:497px;
+	}
+	.txt_services span{
+		color:#fff;
+		font-size:24px;
+		line-height:45px;
+	}
+	.txt_services{
+		display:flex;
+		width:40%;
+		justify-content:center;
+		align-items:center;
+		height:100%;
+		min-height:497px;
+	}
+	.line_list_tab{
+		display:flex;
+		justify-content:center;
+		align-content: center;
+		flex-wrap: wrap;
+		max-width:1360px;
+		margin:0 auto;
+	}
+	.line_list_tab li{
+		list-style:none;
+	}
+	.line_list_tab li a{
+		display:block;
+		padding:10px 35px;
+		color:#000;
+		font-size:24px;
+	}
+	.line_list_tab li.active a{
+		color:#fff;
+		background-color:#ed1c24;
+		border-radius:30px;
+		text-decoration:none;
+	}
+	.line_list_tab li a:hover{
+		text-decoration:none;
+	}
+	.content_list_tab{
+		padding:50px 0;
+	}
+	.slider_services .eclipse-controls{
+		display:none;
+	}
+	.txt_tab_content{
+		text-align:center;
+		font-size:18px;
+		line-height:36px;
+		color:#000;
+		max-width:1360px;
+		margin:0 auto;
+		margin-top:50px;
+	}
+	.download_profile{
+		height:288px;
+		margin-top:50px;
+		margin-bottom:-45px;
+	}
+	.btn_download,.btn_download:hover{
+		background-color:#ed1c24;
+		display:inline-block;
+		padding:10px 85px;
+		border-radius:60px;
+		color:#fff;
+		font-weight:bold;
+		text-decoration:none;
+		margin-top:30px;
+	}
+	.see_more{
+		font-size:16px;
+		color:#fff;
+		background-color:#ed1c24;
+		padding:13px 25px;
+		text-transform:uppercase;
+		margin-top:40px;
+		display:inline-block;
+	}
+	.see_more:hover{
+		color:#fff;
+		text-decoration:none;
+	}
+	.box_services h2{
+		font-size:38px;
+		line-height:65px;
+		margin-bottom:30px;
+		position:relative;
+	}
+	.box_services h2::before{
+		content:"";
+		height:5px;
+		width:85px;
+		background-color:#ed1c24;
+		display:block;
+		position:absolute;
+		bottom:-10px;
+		left:-80px;
+	}
+	.line_services{
+		overflow-x:hidden;
+	}
+	.left_box{
+		text-align:right;
+	}
+	.box_services.left_box h2::before{
+		right:-80px;
+		left:auto;
+		z-index:5;
+	}
+	.line_services{
+		margin:40px 0;
+	}
+	.box_services p{
+		margin-bottom:0;
+		font-size:16px;
+		line-height:32px;
+	}
+	.txt_haki h3{
+		font-size:63px;
+		position:relative;
+		padding-left:70px;
+	}
+	.txt_haki h3::before{
+		content:"";
+		height:4px;
+		width:41px;
+		position:absolute;
+		top:50%;
+		transform:translateY(-50%);
+		left:0px;
+		background-color:#ed1c24;
+	}
+	.txt_haki p{
+		font-size:16px;
+		line-height:30px;
+	}
+	.box_about{
+		padding: 50px 0;
+	}
+	.box_field_work{
+		height:432px;
+	}
+	.txt_field_work{
+		color:#fff;
+	}
+	.txt_field_work h3{
+		font-size:36px;
+		margin-top:90px;
+		margin-bottom:20px;
+	}
+	.txt_field_work li{
+		list-style:none;
+		margin-bottom:15px;
+		font-size:18px;
+	}
+	.txt_bottom_about .txt_haki h3{
+		font-size:48px;
+	}
+	.box_icon_bottom_about{
+		text-align:center;
+		margin-top:40px;
+	}
+	.box_icon_bottom_about h4{
+		font-size:30px;
+	}
+	.box_icon_bottom_about hr{
+		border-color: #ed1c24;
+		border-top-width:4px;
+		max-width:77px;
+		margin:15px auto;
+	}
+	.txt_bottom_about{
+		margin-top:40px;
+	}
+	.txt_contact {
+		margin-top:20px;
+	}
+	.txt_contact p{
+		font-size:20px;
+		
+	}
+	.box_contact{
+		margin-top:50px;
+	}
+	.line_form_contact{
+		margin-bottom:25px;
+	}
+	.line_form_contact .form-control{
+		border-radius:0;
+		border-color:#ccc;
+		height:54px;
+		font-size:20px;
+	}
+	.line_form_contact .see_more{
+		margin-top:0;
+		font-size:20px;
+	}
 @media only screen and (min-width: 1300px) {
 	.container{
 		width:1680px;
@@ -503,6 +718,15 @@ figure figcaption{
 	}
 }
 @media only screen and (min-width: 768px) {
+	.txt_download{
+		padding-top:60px;
+		font-size:26px;
+		line-height:52px;
+		color:#fff;
+		text-align:center;
+		max-width:1000px;
+		margin:0 auto;
+	}
 	.modal-dialog{
 		width:830px;
 	}
@@ -630,6 +854,81 @@ figure figcaption{
 	
 }
 @media only screen and (max-width: 767px) {
+	.form_contact{
+		margin-top:40px;
+	}
+	.line_form_contact .form-control{
+		height:40px;
+		font-size:16px;
+	}
+	.box_contact{
+		margin-top:40px;
+	}
+	.box_about{
+		padding:40px 0;
+	}
+	.txt_field_work h3{
+		margin-top:30px;
+		font-size:30px;
+	}
+	.txt_bottom_about .txt_haki h3{
+		font-size:30px;
+	}
+	.txt_field_work li{
+		font-size:16px;
+	}
+	.title_box{
+		padding:0 20px;
+	}
+	.txt_haki h3{
+		font-size:30px;
+		margin-top:0;
+	}
+	.btn_download, .btn_download:hover{
+		margin-top:20px;
+	}
+	.txt_download{
+		color:#fff;
+		text-align:center;
+	}
+	.txt_download h4{
+		margin:0;
+		padding:0 20px;
+		padding-top:30px;
+	}
+	.txt_tab_content{
+		margin-top:40px;
+		font-size:16px;
+		line-height:20px;
+	}
+	.content_list_tab{
+		padding:40px;
+	}
+	.line_list_tab li a{
+		font-size:14px;
+		padding:5px 10px;
+	}
+	.services2{
+		height:200px;
+	}
+	.header_services{
+		font-size:16px;
+		line-height:20px;
+		padding:40px 0;
+	}
+	.txt_services span{
+		font-size:16px;
+		line-height:20px;
+	}
+	.txt_services{
+		width:100%;
+		min-height:200px;
+	}
+	.title_box h3{
+		margin:0;
+		padding-top:15px;
+		margin-bottom:20px;
+	}
 	.content_body{
 		margin-top:60px;
 	}
