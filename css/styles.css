@@ -89,7 +89,7 @@ body{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	font-size:31px;
+	font-size:28px;
 	font-weight:bold;
 	margin:0;
 	margin-bottom:10px;
@@ -711,11 +711,19 @@ figure figcaption{
 	}
 @media only screen and (min-width: 1300px) {
 	.container{
-		width:1680px;
+		width:90%;
+		max-width: 1680px;
+		margin:  0 auto;
 	}
 	.about{
 		background-position:right;
 	}
+}
+@media only screen and (min-width: 1600px) {
+	.txt_about{
+		margin-left: 102px;
+	}
+	
 }
 @media only screen and (min-width: 768px) {
 	.txt_download{
@@ -755,7 +763,6 @@ figure figcaption{
 	.txt_about{
 		width:52%;
 		margin-top:60px;
-		margin-left:102px;
 	}
 	.txt_about h3{
 		font-size:61px;
